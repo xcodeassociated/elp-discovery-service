@@ -20,7 +20,7 @@ CMD chmod +x ./wait-for.sh
 
 WORKDIR $APP_HOME
 
-COPY --from=builder /home/gradle/src/app/build/libs/eureka-service-*.jar ./app.jar
+COPY --from=builder /home/gradle/src/app/build/libs/*service*.jar ./app.jar
 
 EXPOSE 8761
 EXPOSE 8888

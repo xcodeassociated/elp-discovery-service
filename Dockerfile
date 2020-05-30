@@ -14,7 +14,7 @@ CMD chmod +x ./wait-for.sh
 
 WORKDIR $APP_HOME
 
-COPY ./build/libs/eureka-service-*.jar ./app.jar
+COPY ./build/libs/*service*.jar ./app.jar
 
 EXPOSE 8761
 EXPOSE 8888
